@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>athri page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: darkslategray;
+        }
+        .scroll-bar {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .scroll-bar button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .content .button-group {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content .button-group.active {
+            display: flex;
+        }
+        .myimg {
+            width: 30%;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            height: auto;
+            cursor: pointer;
+            border: 10px;
+            box-shadow: 8px 8px 8px black;
+            border-radius: 25px;
+            align-items: center;
+            margin-left: 26%;
+        }
+    </style>
+    <script>
+        function showButtons(groupId) {
+            document.querySelectorAll('.button-group').forEach(group => {
+                group.classList.remove('active');
+            });
+            document.getElementById(groupId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="scroll-bar">
+        <button onclick="showButtons('group1')">sweets & refreshments</button>
+        <button onclick="showButtons('group2')">events & festivals</button>
+        <button onclick="showButtons('group3')">cafe</button>
+        <button onclick="showButtons('group4')">historical sites </button>
+        <button onclick="showButtons('group5')">villages</button>
+        <button onclick="showButtons('group6')">hair & beauty</button>
+        <button onclick="showButtons('group7')">barbers</button>
+    </div>
+    <div class="content">
+        <div id="group1" class="button-group">
+            <a href="rob.html"><img class="myimg" src="b1c9b875-aa0a-4157-bf5a-58d40d88aa4a.jpeg" alt="roben kunafa"></a>
+            <a href="#"><img class="myimg" src="download.jpg" alt="happy day sweets"></a>
+            <a href="#"><img class="myimg" src="download.png" alt="gashtyar sweets" style="margin-right: 34%; margin-bottom: 25px;"></a>
+        </div>
+        <div id="group2" class="button-group">
+            <a href="#"><img class="myimg" src="Dancing for Wedding rituals caption 1 .jpg" alt="nalafest" style="margin-right: 34%; margin-bottom: 25px;"></a>
+            <a href="#"><img class="myimg" src="images (7).jfif" alt="dooreh fest" style="margin-right: 34%; margin-bottom: 25px;"></a>
+            <a href="#"><img class="myimg" src="Untitled-1-300x160.jpg" alt="khoyada eve" style="margin-right: 34%; margin-bottom: 25px;"></a>
+        </div>
+        <div id="group3" class="button-group">
+            <a href="#"><img class="myimg" src="images (1).jfif" alt="baz" style="margin-right: 34%; margin-bottom: 25px;"></a>
+            <a href="#"><img class="myimg" src="images (6).jfif" alt="4u" style="margin-right: 34%; margin-bottom: 25px;"></a>
+            <a href="#"><img class="myimg" src="images (2).jfif" alt="brosk" style="margin-right: 34%; margin-bottom: 25px;"></a>
+        </div>
+        <div id="group4" class="button-group">
+            <img class="myimg" src="image4_1.jpg" alt="Option 4.1">
+            <img class="myimg" src="image4_2.jpg" alt="Option 4.2">
+            <img class="myimg" src="image4_3.jpg" alt="Option 4.3">
+            <img class="myimg" src="image4_4.jpg" alt="Option 4.4">
+        </div>
+        <div id="group5" class="button-group">
+            <img class="myimg" src="image5_1.jpg" alt="Option 5.1">
+            <img class="myimg" src="image5_2.jpg" alt="Option 5.2">
+            <img class="myimg" src="image5_3.jpg" alt="Option 5.3">
+            <img class="myimg" src="image5_4.jpg" alt="Option 5.4">
+        </div>
+        <div id="group6" class="button-group">
+            <img class="myimg" src="image6_1.jpg" alt="Option 6.1">
+            <img class="myimg" src="image6_2.jpg" alt="Option 6.2">
+            <img class="myimg" src="image6_3.jpg" alt="Option 6.3">
+            <img class="myimg" src="image6_4.jpg" alt="Option 6.4">
+        </div>
+        <div id="group7" class="button-group">
+            <img class="myimg" src="image7_1.jpg" alt="Option 7.1">
+            <img class="myimg" src="image7_2.jpg" alt="Option 7.2">
+            <img class="myimg" src="image7_3.jpg" alt="Option 7.3">
+            <img class="myimg" src="image7_4.jpg" alt="Option 7.4">
+        </div>
+    </div>
+</body>
+</html>
